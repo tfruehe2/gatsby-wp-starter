@@ -1,7 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
 import { graphql } from "gatsby"
-import "./blog-styles.css"
 
 export default function BlogPost({ data }) {
   const post = data.allWpPost.nodes[0]

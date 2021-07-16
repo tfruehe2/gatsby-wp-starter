@@ -5,7 +5,7 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
+    title: `Wordpress Integration`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@gatsbyjs`,
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
@@ -40,16 +40,16 @@ module.exports = {
         url: `${process.env.WORDPRESS_URL}/graphql`,
       }
     },
-    {
-      resolve: "gatsby-source-wordpress-menus",
-      options: {
-        wordpressUrl: process.env.WORDPRESS_URL,
-        languages: ["en"],
-        enableWpml: true,
-        allowCache: true,
-        maxCacheDurationSeconds: 60 * 60 * 24
-      },
-    },
+    // {
+    //   resolve: "gatsby-source-wordpress-menus",
+    //   options: {
+    //     wordpressUrl: process.env.WORDPRESS_URL,
+    //     languages: ["en"],
+    //     enableWpml: true,
+    //     allowCache: true,
+    //     maxCacheDurationSeconds: 60 * 60 * 24
+    //   },
+    // },
     {
       resolve: `gatsby-plugin-sass`,
       options: {
